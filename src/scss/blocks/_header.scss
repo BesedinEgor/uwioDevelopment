@@ -1,0 +1,50 @@
+.header {
+  background-color: var(--green-color);
+  padding: 5px 0;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 7px 15px;
+    border-radius: 15px;
+  }
+}
+
+.header__nav {
+  display: none;
+
+  @include largeTablet {
+    display: flex;
+  }
+}
+
+.header__start-tg {
+  position: relative;
+  display: inline-block;
+
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--orange-color);
+  max-width: 103px;
+  border-radius: 15px;
+  padding: 7px 2px;
+  margin-left: auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -4px;
+    right: -4px;
+    background-image: url("./../../img/svg/tg-icon.svg");
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

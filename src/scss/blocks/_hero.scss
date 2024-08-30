@@ -1,0 +1,42 @@
+.hero {
+  padding-top: 38px;
+  padding-bottom: 43px;
+  background-color: var(--green-color);
+}
+
+.hero__title {
+  position: relative;
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 28px;
+  color: var(--white-color);
+  padding-bottom: 316px;
+ 
+  &::after {
+    content: "";
+    
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 369px;
+    height: 297px;
+    
+    background-image: url('./../../img/hero/hero-mob.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @include minMobile {
+        width: 315px;
+        background-size: contain;
+    }
+  }
+}
+
+.hero__text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
+  color: var(--white-color);
+}
