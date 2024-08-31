@@ -1,0 +1,55 @@
+.about {
+  padding-top: 6px;
+  padding-bottom: 50px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--black-color);
+  margin-bottom: 28px;
+}
+
+.about__people {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about__item {
+  position: relative;
+  padding-left: 31px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 26px;
+    height: 26px;
+
+    background-image: url("./../../img/svg/check.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.about__item-title {
+  margin-bottom: 10px;
+
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 121%;
+  color: var(--green-color);
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--gray-color);
+}

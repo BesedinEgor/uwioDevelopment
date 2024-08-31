@@ -1,0 +1,104 @@
+.advantages {
+  padding-top: 70px;
+  padding-bottom: 24px;
+}
+.advantages__title {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--black-color);
+  margin-bottom: 20px;
+}
+
+.advantages__list {
+  position: relative;
+
+  padding-top: 300px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 19px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 335px;
+    height: 300px;
+
+    background-image: url("./../../img/advantages/people@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @include mediaBg() {
+      background-image: url("./../../img/advantages/people@2x.png");
+    }
+
+    @include minMobile {
+      width: 100%;
+      padding-top: 20px;
+    }
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 28px;
+
+  &:first-child {
+    margin-top: 20px;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 22px;
+    height: 22px;
+
+    background-image: url("./../../img/svg/icon1.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(2) {
+    &::after {
+      background-image: url("./../../img/svg/icon2.svg");
+    }
+  }
+  &:nth-child(3) {
+    &::after {
+      background-image: url("./../../img/svg/icon3.svg");
+    }
+  }
+  &:nth-child(4) {
+    &::after {
+      background-image: url("./../../img/svg/icon4.svg");
+    }
+  }
+  &:nth-child(5) {
+    &::after {
+      background-image: url("./../../img/svg/icon5.svg");
+    }
+  }
+  &:last-child {
+    &::after {
+      background-image: url("./../../img/svg/icon6.svg");
+    }
+  }
+}
+
+.advantages__item-title {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.advantages__descr {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--gray-color);
+}
