@@ -10,5 +10,5 @@
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
 
-import resultSwiper from "./modules/swiper.js";
-resultSwiper();
+import initSwiper from "./modules/swiper.js";
+initSwiper();
