@@ -20,10 +20,7 @@ function initSwiper() {
   // Инициализация programSwiper
   const programSwiper = new Swiper(".program-swiper", {
     slidesPerView: "auto",
-    loop: true,
-    // autoplay: {
-    //   delay: 3000,
-    // },
+    loop: false,
     spaceBetween: 16,
     pagination: {
       el: ".program-progressbar",
