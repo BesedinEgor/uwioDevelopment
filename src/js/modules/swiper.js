@@ -11,9 +11,9 @@ function initSwiper() {
     slidesPerView: "auto",
     loop: false,
     spaceBetween: 16,
-    navigation: {
-      nextEl: ".result-swiper-next",
-      prevEl: ".result-swiper-prev",
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true
     },
   });
 
@@ -21,7 +21,7 @@ function initSwiper() {
   const programSwiper = new Swiper(".program-swiper", {
     slidesPerView: "auto",
     loop: false,
-    spaceBetween: 16,
+    spaceBetween: 20,
     pagination: {
       el: ".program-progressbar",
       type: "progressbar",
@@ -37,17 +37,17 @@ function initSwiper() {
     },
   });
 
-    // Функция для обновления прогресса в процентах
-    function updateProgress(activeIndex) {
-      const totalSlides = slides.length; // Общее количество слайдов
-      const percentage = Math.round(((activeIndex + 1) / totalSlides) * 100);
-  
-      // Обновляем текст с процентами
-      percent.textContent = percentage + "%";
-    }
-  
-    // Инициализация прогресса при загрузке
-    updateProgress(programSwiper.realIndex);
+  // Функция для обновления прогресса в процентах
+  function updateProgress(activeIndex) {
+    const totalSlides = slides.length; // Общее количество слайдов
+    const percentage = Math.round(((activeIndex + 1) / totalSlides) * 100);
+
+    // Обновляем текст с процентами
+    percent.textContent = percentage + "%";
+  }
+
+  // Инициализация прогресса при загрузке
+  updateProgress(programSwiper.realIndex);
 }
 
 export default initSwiper;

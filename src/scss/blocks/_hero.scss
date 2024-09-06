@@ -10,16 +10,16 @@
   font-weight: 900;
   font-size: 28px;
   color: var(--white-color);
-  padding-bottom: 316px;
+  padding-bottom: 326px;
  
   &::after {
     content: "";
     
     position: absolute;
     left: 50%;
-    bottom: 0px;
+    bottom: 15px;
     transform: translateX(-50%);
-    width: 369px;
+    width: 359px;
     height: 297px;
     
     background-image: url('./../../img/hero/hero-mob@2x.png');
@@ -33,8 +33,14 @@
     @include minMobile {
         width: 315px;
         background-size: contain;
+        bottom: 0;
     }
   }
+
+  @include minMobile {
+    padding-bottom: 300px;
+    bottom: -20px;
+}
 }
 
 .hero__text {
