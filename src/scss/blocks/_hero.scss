@@ -6,8 +6,6 @@
 
 .hero__title {
   position: relative;
-  font-family: var(--font-family);
-  font-weight: 900;
   font-size: 28px;
   color: var(--white-color);
   padding-bottom: 326px;
@@ -49,4 +47,8 @@
   font-size: 15px;
   line-height: 140%;
   color: var(--white-color);
+
+  @include minMobile {
+    font-size: 14px;
+  }
 }
