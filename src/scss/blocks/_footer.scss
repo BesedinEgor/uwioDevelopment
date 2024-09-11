@@ -88,9 +88,13 @@
   margin-bottom: 4px;
   color: var(--light-color);
 
-  // @include mediaMobileL {
+// @include mediaMobileL {
   //   text-align: right;
   // }
+
+  @include minMobile {
+    font-size: 14px;
+  }
 }
 
 .footer__link-partners,
