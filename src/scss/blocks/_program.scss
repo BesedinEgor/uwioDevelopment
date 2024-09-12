@@ -13,10 +13,22 @@
 
   .slide-inner {
     position: relative;
-    padding-top: 330px;
+    padding-top: 540px;
     padding-bottom: 75px;
     border-radius: 15px;
     background-color: var(--white-color);
+
+    img{
+      width: 300px;
+
+      @include minMobile {
+        width: 250px;
+      }
+    }
+
+    @include minMobile {
+      padding-top: 440px;
+    }
   }
 
   .phone {
@@ -40,7 +52,7 @@
     padding: 0 20px;
 
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--gray-color);
   }
 
