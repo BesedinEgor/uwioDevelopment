@@ -1,4 +1,5 @@
 .program {
+  position: relative;
   margin-top: 30px;
 }
 
@@ -7,7 +8,6 @@
 }
 
 .program-swiper {
-  position: relative;
   .swiper-slide {
     padding-top: 25px;
   }
@@ -15,12 +15,20 @@
   .slide-inner {
     position: relative;
     padding-top: 340px;
-    height: 605px;
     padding-bottom: 75px;
     border-radius: 15px;
     background-color: var(--white-color);
+    height: 600px;
 
-    @include minMobile {
+    @media (max-width: 360px) {
+      height: 620px;
+    }
+
+    @media (max-width: 343px) {
+      height: 630px;
+    }
+
+    @media (max-width: 326px) {
       height: 650px;
     }
   }
