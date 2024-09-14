@@ -7,6 +7,7 @@
 }
 
 .program-swiper {
+
   .swiper-slide {
     padding-top: 25px;
   }
@@ -14,9 +15,14 @@
   .slide-inner {
     position: relative;
     padding-top: 340px;
+    height: 605px;
     padding-bottom: 75px;
     border-radius: 15px;
     background-color: var(--white-color);
+
+    @include minMobile {
+      height: 650px;
+    }
   }
 
   .phone {
