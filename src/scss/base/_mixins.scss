@@ -5,13 +5,19 @@
 }
 
 @mixin desctop () {
-    @media (min-width: 1280px) {
+    @media (min-width: 1240px) {
         @content;
     }
 }
 
 @mixin laptop () {
     @media (min-width: 1185px) {
+        @content;
+    }
+}
+
+@mixin minLaptop () {
+    @media (min-width: 950px) {
         @content;
     }
 }
