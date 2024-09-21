@@ -48,17 +48,96 @@
 					</p>
 				</div>
 				<picture>
-					<source srcset="./img/hero/hero-mob.webp 1x, ./img/hero/hero-mob@2x.webp 2x" type="image/webp" />
-					<source srcset="./img/hero/hero-mob.png 1x, ./img/hero/hero-mob@2x.png 2x" type="image/png" />
-					<img src="./img/hero/hero-mob.png" alt="специалист по видеосвязи с пациентом" width="686" height="559" />
+					<source srcset="./img/hero/hero-mob@2x.webp 1x, ./img/hero/hero-mob@2x@2x.webp 2x" type="image/webp" />
+					<source srcset="./img/hero/hero-mob@2x.png 1x, ./img/hero/hero-mob@2x@2x.png 2x" type="image/png" />
+					<img src="./img/hero/hero-mob@2x.png" alt="специалист по видеосвязи с пациентом" width="686" height="559" />
 				</picture>
 			</div>
 		</section>
 
 		<section class="program">
 			<div class="container">
-				<h2 class="program__title title">Как это работает</h2>
-				<div class="swiper program-swiper">
+				<div class="container-content">
+					<div class="program__content-right">
+						<h2 class="program__title title">Как это работает</h2>
+						<ul class="program__accordion-list">
+							<li class="program__accordion-item active" data-tab="card1">
+								<button class="program__accordion-control" aria-hidden="true">
+									<h3 class="program__accordion-title">
+										Клиническое тестирование и&#160;подбор персонализированной программы
+									</h3>
+								</button>
+								<div class="program__accordion-content" aria-hidden="false">
+									Перед началом программы мы&#160;проведем глубокое клиническое тестирование. На&#160;основе результатов будет предложен список свободных
+									психотерапевтов и&#160;назначен персональный комплекс инструментов, уроков и&#160;практик для занятий между сессиями
+								</div>
+							</li>
+							<li class="program__accordion-item" data-tab="card2">
+								<button class="program__accordion-control" aria-hidden="false">
+									<h3 class="program__accordion-title">
+										Видео-сессии с&#160;психологом
+									</h3>
+								</button>
+								<div class="program__accordion-content" aria-hidden="true">
+									Специалист поможет проработать ваши внутренние убеждения, паттерны мышления и&#160;поведения, ухудшающие жизнь, а&#160;так&#160;же сформирует
+									рекомендации, которые помогут вам не&#160;допустить рецидивов в дальнейшем
+								</div>
+							</li>
+							<li class="program__accordion-item" data-tab="card3">
+								<button class="program__accordion-control" aria-hidden="false">
+									<h3 class="program__accordion-title">
+										Инструменты, уроки и&#160;практики
+									</h3>
+								</button>
+								<div class="program__accordion-content" aria-hidden="true">
+									Занятия в&#160;приложении между сессиями помогут обрести психологическую гибкость и&#160;эмоциональную устойчивость, а&#160;так же улучшить
+									состояние организма через программы глубокой оптимизации сна и&#160;питания
+								</div>
+							</li>
+							<li class="program__accordion-item" data-tab="card4">
+								<button class="program__accordion-control" aria-hidden="false">
+									<h3 class="program__accordion-title">
+										Проактивный контроль прогресса&#160;&#8212; соединяем технологии и&#160;человека
+									</h3>
+								</button>
+								<div class="program__accordion-content" aria-hidden="true">
+									Психотерапевт работает и&#160;между сессиями: анализирует ваши данные, вносит необходимые корректировки и&#160;повышает эффективность терапии
+									на&#160;основе полученной информации
+								</div>
+							</li>
+							<li class="program__accordion-item" data-tab="card5">
+								<button class="program__accordion-control" aria-hidden="false">
+									<h3 class="program__accordion-title">
+										Прозрачная аналитика
+									</h3>
+								</button>
+								<div class="program__accordion-content" aria-hidden="true">
+									Проходите регулярную проверку и&#160;фиксируйте ваши объективные изменения в&#160;системе контроля прогресса
+								</div>
+							</li>
+							<li class="program__accordion-item" data-tab="card6">
+								<button class="program__accordion-control" aria-hidden="false">
+									<h3 class="program__accordion-title">
+										Поддержка специалиста между сессиями
+									</h3>
+								</button>
+								<div class="program__accordion-content" aria-hidden="true">
+									Ваш психотерапевт всегда на&#160;связи: специалист поддержит, ответит на&#160;ваши вопросы и&#160;напишет рекомендации, если увидит в&#160;вашей
+									аналитике то, на&#160;что нужно обратить внимание
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="program__gallery-left">
+						<img class="program__image-phone active" src="./img/program/slide1.png" alt="" width="365" height="315" id="card1" />
+						<img class="program__image-phone" src="./img/program/slide2.png" alt="" width="365" height="315" id="card2" />
+						<img class="program__image-phone" src="./img/program/slide3.png" alt="" width="365" height="315" id="card3" />
+						<img class="program__image-phone" src="./img/program/slide4.png" alt="" width="365" height="315" id="card4" />
+						<img class="program__image-phone" src="./img/program/slide5.png" alt="" width="365" height="315" id="card5" />
+						<img class="program__image-phone" src="./img/program/slide6.png" alt="" width="365" height="315" id="card6" />
+					</div>
+				</div>
+				<div class="swiper program-swiper none">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="slide-inner">
@@ -165,6 +244,60 @@
 
 					<div class="program-progressbar"></div>
 				</div>
+			</div>
+		</section>
+
+		<section class="advantages">
+			<div class="container">
+				<h2 class="advantages__title title">
+					Предлагаем продуманное решение, а&#160;не&#160;отдельные консультации с&#160;психологом
+				</h2>
+				<ul class="advantages__list">
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Комплексный подход</h3>
+						<p class="advantages__descr">
+							Ваше ментальное здоровье зависит не&#160;только от&#160;психологических факторов, но&#160;и&#160;от&#160;физиологических. <br />
+							Именно поэтому мы&#160;соединили разум и&#160;тело:&#160;психотерапия&#160;сочетается с программой по&#160;изменению образа жизни, глубокой оптимизацией
+							сна и питания
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Непрерывная модель психотерапии</h3>
+						<p class="advantages__descr">
+							Важные изменения происходят не&#160;только на&#160;сессиях, но&#160;и&#160;между ними: консультации с&#160;психологом сочетаются с&#160;четко выстроенным
+							планом занятий и&#160;поддержкой специалиста между встречами
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Психологи узких специализаций</h3>
+						<p class="advantages__descr">
+							Специалисты Uwio используют методы&#160;когнитивно-поведенческой психотерапии, рекомендованные&#160;ВОЗ&#160;для работы с&#160;тревожными расстройствами,
+							депрессией и&#160;выгоранием
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">
+							Интерактивные инструменты, уроки и&#160;практики
+						</h3>
+						<p class="advantages__descr">
+							Развивайте навыки осознанности, эмоциональной устойчивости и психологической гибкости для повышения эффективности терапии
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">
+							Терапия, основанная на&#160;данных
+						</h3>
+						<p class="advantages__descr">
+							Глубокая аналитика клинических показателей поможет вам прозрачно видеть ваши изменения, а&#160;психологу постоянно повышать эффективность терапии
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">9 недель до&#160;результата</h3>
+						<p class="advantages__descr">
+							Решите свою проблему в&#160;рамках непрерывной 9-недельной программы, не растягивая терапию на&#160;месяцы и&#160;годы
+						</p>
+					</li>
+				</ul>
 			</div>
 		</section>
 

@@ -13,5 +13,8 @@ mobileNav();
 import initSwiper from "./modules/swiper.js";
 initSwiper();
 
+import programAccordion from './modules/program-accordion.js';
+programAccordion();
+
 // import accordion from './modules/accordion.js';
 // accordion();

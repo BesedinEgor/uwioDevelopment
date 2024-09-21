@@ -1,12 +1,12 @@
 function accordion() {
   document.addEventListener("DOMContentLoaded", () => {
-    const accordions = document.querySelectorAll('.faq__accordion-item, .efficiency__metods');
+    const accordions = document.querySelectorAll('.faq__accordion-item');
     accordions.forEach(el => {
       el.addEventListener('click', (e)=> {
         const self = e.currentTarget;
-        const control = self.querySelector('.faq__accordion-control, .efficiency__metods-item');
+        const control = self.querySelector('.faq__accordion-control');
         
-        const content = self.querySelector('.faq__accordion-content, .efficiency__metods-content');
+        const content = self.querySelector('.faq__accordion-content');
         
         self.classList.toggle('open');
 
