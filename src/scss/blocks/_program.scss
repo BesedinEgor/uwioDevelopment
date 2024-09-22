@@ -54,33 +54,25 @@
 
 .program__accordion-item {
   position: relative;
-  padding: 15px 60px 15px 20px;
   border-radius: 15px;
-  background-color: #f6f6f6;
-  transform: rotate(0deg);
+  
   cursor: pointer;
 
   &.active {
     border: 1.5px solid var(--green-color);
     background-color: var(--white-color);
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 15px;
-    right: 20px;
-    background-image: url("../img/svg/arrow-up.svg");
-    transition: transform 0.3s ease-out;
-    background-repeat: no-repeat;
-  }
 }
-.program__accordion-item.open {
-  &::after {
-    transition: transform 0.3s ease-out;
-    transform: rotate(180deg);
+
+.program__accordion-control {
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f6f6f6;
+
+  &.active {
+    border: 1.5px solid var(--green-color);
+    background-color: var(--white-color);
   }
 }
 
@@ -96,6 +88,7 @@
   @include largeTablet {
     font-size: 18px;
     font-weight: 500;
+    margin-bottom: 0;
   }
 
   @include laptop {
@@ -112,6 +105,10 @@
   max-height: 0;
   will-change: max-height;
   transition: max-height 0.3s ease-out;
+  border-radius: 15px;
+  background-color: var(--white-color);
+
+
 
   @include laptop {
     font-size: 16px;
@@ -120,21 +117,20 @@
 
 .open .program__accordion-content {
   opacity: 1;
+  
+  @include tablet{
+    padding: 10px 20px 20px 20px;
+    color: var(--gray-color);
+  }
 }
 
 .program__image-phone {
   display: none;
-  // opacity: 0;
-  // visibility: hidden;
-  // transition: all 0.3s ease-in-out;
 
   &.active {
     @include largeTablet {
       display: block;
       margin-top: 10px;
-      // opacity: 1;
-      // visibility: visible;
-      // transition: all 0.3s ease-in-out;
     }
 
     @include laptop {
