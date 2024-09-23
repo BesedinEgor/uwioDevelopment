@@ -5,6 +5,10 @@
   @include largeTablet {
     margin-bottom: 30px;
   }
+
+  @include largeTablet {
+    margin-top: 100px;
+  }
 }
 
 .container-content {
