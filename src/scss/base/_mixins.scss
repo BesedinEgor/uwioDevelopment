@@ -4,7 +4,7 @@
     }
 }
 
-@mixin desctop () {
+@mixin desktop () {
     @media (min-width: 1240px) {
         @content;
     }

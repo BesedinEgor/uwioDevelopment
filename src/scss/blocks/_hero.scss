@@ -56,10 +56,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    // @include mediaBg() {
-    //   background-image: url('./../../img/hero/hero-mob@2x.png');
-    // }
-
     @include minMobile {
       width: 315px;
       background-size: contain;

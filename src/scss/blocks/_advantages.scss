@@ -4,39 +4,52 @@
 }
 .advantages__title {
   margin-bottom: 20px;
+
+  @include laptop {
+    margin-bottom: 43px;
+  }
+}
+
+.advantages__content {
+  @include largeTablet {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & .picture-mob {
+    @include largeTablet {
+      display: none;
+    }
+  }
+
+  & .picture-desk {
+    display: none;
+
+    @include largeTablet {
+      display: block;
+      width: 350px;
+      height: auto;
+    }
+
+    @include desktop {
+      width: 100%;
+    }
+  }
 }
 
 .advantages__list {
   position: relative;
-  padding-top: 300px;
 
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   gap: 19px;
 
-  &::after {
-    content: "";
-
-    position: absolute;
-    left: 50%;
-    top: 0px;
-    transform: translateX(-50%);
-    width: 335px;
-    height: 100%;
-
-    background-image: url("./../../img/advantages/people@2x.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    @include mediaBg() {
-      background-image: url("./../../img/advantages/people@2x.png");
-    }
-
-    @include minMobile {
-      width: 100%;
-      padding-top: 20px;
-    }
+  @include laptop {
+    gap: 25px;
   }
 }
 
@@ -44,8 +57,16 @@
   position: relative;
   padding-left: 28px;
 
+  @include laptop {
+    padding-left: 40px;
+  }
+
   &:first-child {
     margin-top: 20px;
+
+    @include largeTablet {
+      margin-top: 0;
+    }
   }
 
   &::after {
@@ -53,12 +74,18 @@
 
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: 5px;
     width: 22px;
     height: 22px;
 
     background-image: url("./../../img/svg/icon1.svg");
     background-repeat: no-repeat;
+
+    @include laptop {
+      width: 24px;
+      height: 24px;
+      background-size: cover;
+    }
   }
 
   &:nth-child(2) {
@@ -92,6 +119,11 @@
   margin-bottom: 5px;
   font-weight: 700;
   font-size: 18px;
+
+  @include desktop {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
 }
 
 .advantages__descr {
@@ -101,5 +133,10 @@
 
   @include minMobile {
     font-size: 15px;
+  }
+
+  @include laptop {
+    font-size: 16px;
+    line-height: 140%;
   }
 }

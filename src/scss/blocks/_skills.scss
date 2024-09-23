@@ -1,9 +1,22 @@
 .skills {
   padding-bottom: 38px;
+
+  @include laptop {
+    .container {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 30px;
+    }
+  }
 }
 
 .skills__title {
   margin-bottom: 19px;
+
+  @include laptop {
+    margin-bottom: 37px;
+  }
 }
 
 .skills__list {
@@ -11,6 +24,10 @@
   flex-direction: column;
   gap: 15px;
   padding-bottom: 12px;
+
+  @include laptop {
+    gap: 27px;
+  }
 }
 
 .skills__item {
@@ -22,21 +39,32 @@
   line-height: 140%;
   color: var(--green-color);
 
+  @include laptop {
+    font-size: 18px;
+    padding-left: 54px;
+  }
+
   &::after {
     content: "";
-    
+
     position: absolute;
     left: 0px;
     top: 50%;
     transform: translateY(-50%);
     width: 26px;
     height: 26px;
-    
-    background-image: url('./../../img/svg/circle.svg');
-    background-repeat: no-repeat;    
+
+    background-image: url("./../../img/svg/circle.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include laptop {
+      width: 38px;
+      height: 38px;
+    }
   }
 }
 
 .skills__image {
-    width: 100%;
+  width: 100%;
 }

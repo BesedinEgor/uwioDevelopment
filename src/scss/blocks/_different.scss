@@ -1,10 +1,18 @@
 .different {
   padding-top: 10px;
   padding-bottom: 27px;
+  
+  @include laptop {
+    padding-bottom: 50px;
+  }
 }
 
 .different__title {
   margin-bottom: 15px;
+
+  @include laptop {
+    margin-bottom: 53px;
+  }
 
   span {
     color: var(--orange-color);
@@ -14,6 +22,13 @@
 .different__list {
   display: grid;
   gap: 15px;
+
+  @include laptop {
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 42px;
+    row-gap: 32px;
+  }
 }
 
 .different__item {
@@ -29,6 +44,10 @@
     .different__number {
       &::after {
         background-image: url("./../../img/svg/differ2.svg");
+
+        @include laptop {
+          background-image: url("./../../img/svg/differ2-desk.svg");
+        }
       }
     }
   }
@@ -36,6 +55,10 @@
     .different__number {
       &::after {
         background-image: url("./../../img/svg/differ3.svg");
+
+        @include laptop {
+          background-image: url("./../../img/svg/differ3-desk.svg");
+        }
       }
     }
   }
@@ -43,8 +66,17 @@
     .different__number {
       &::after {
         background-image: url("./../../img/svg/differ4.svg");
+
+        @include laptop {
+          background-image: url("./../../img/svg/differ4-desk.svg");
+        }
       }
     }
+  }
+
+  @include laptop {
+    gap: 33px;
+    padding: 16px 18px;
   }
 }
 
@@ -72,6 +104,19 @@
 
     background-image: url("./../../img/svg/differ1.svg");
     background-repeat: no-repeat;
+    background-size: cover;
+
+    @include laptop {
+      width: 74px;
+      height: 73px;
+      background-image: url("./../../img/svg/differ1-desk.svg");
+    }
+  }
+
+  @include laptop {
+    font-size: 60px;
+    height: 72px;
+    padding-left: 98px;
   }
 }
 
@@ -80,6 +125,12 @@
   font-size: 18px;
   color: var(--black-color);
   margin-bottom: 12px;
+
+  @include laptop {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 17px;
+  }
 }
 
 .different__content {
@@ -91,4 +142,9 @@
   font-weight: 400;
   font-size: 14px;
   color: var(--gray-color);
+
+  @include laptop {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }

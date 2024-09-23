@@ -28,12 +28,13 @@
   display: none;
 
   &.active {
-    display: block;
+    @include largeTablet {
+      display: block;
+    }
   }
 }
 
 //accordion desktop
-
 .program__accordion-list {
   @media (max-width: 767px) {
     display: none;
@@ -46,11 +47,14 @@
 
 .program__accordion-item {
   position: relative;
-  padding: 20px;
+  padding: 10px;
   border-radius: 15px;
-  background-color: var(--white-color);
-  
+  background-color: #f6f6f6;
   cursor: pointer;
+
+  @include laptop {
+    padding: 20px;
+  }
 
   &.active {
     border: 1.5px solid var(--green-color);
@@ -66,14 +70,14 @@
   margin-bottom: 5px;
   color: var(--black-color);
 
-  @include largeTablet {
+  @include minLaptop {
     font-size: 18px;
-    font-weight: 500;
     margin-bottom: 0;
   }
 
   @include laptop {
     font-size: 21px;
+    font-weight: 600;
   }
 }
 
@@ -94,7 +98,12 @@
 
 .open .program__accordion-content {
   opacity: 1;
-  margin-top: 20px;
+  margin-top: 10px;
+
+  @include laptop {
+    margin-top: 20px;
+    
+  }
 }
 
 // .program__image-phone {

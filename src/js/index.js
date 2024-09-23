@@ -16,5 +16,5 @@ initSwiper();
 import programAccordion from './modules/program-accordion.js';
 programAccordion();
 
-// import accordion from './modules/accordion.js';
-// accordion();
+import accordion from './modules/accordion.js';
+accordion();

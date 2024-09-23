@@ -1,21 +1,28 @@
 .faq {
-  // margin-bottom: 100px;
   margin-bottom: 50px;
+
+  @include laptop {
+    margin-bottom: 100px;
+  }
 }
 
 .faq__title {
-  // font-size: 38px;
-  // font-weight: 900;
-  // margin-bottom: 20px;
   margin-bottom: 15px;
+
+  @include laptop {
+    margin-bottom: 30px;
+  }
 }
 
 .faq__accordion-list {
   display: flex;
   flex-direction: column;
-  // gap: 10px;
   gap: 5px;
   margin-bottom: 30px;
+
+  @include laptop {
+    gap: 10px;
+  }
 }
 
 .faq__accordion-item {
@@ -46,13 +53,16 @@
 }
 
 .faq__accordion-title {
-  // font-size: 18px;
   text-align: left;
   font-size: 16px;
   font-weight: 600;
-  line-height: 140.023%; /* 25.204px */
+  line-height: 140.023%;
   margin-bottom: 5px;
-  color: #000;
+  color: var(--black-color);
+
+  @include laptop {
+    font-size: 18px;
+  }
 }
 
 .faq__accordion-content {
