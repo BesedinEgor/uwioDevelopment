@@ -55,9 +55,16 @@
   border-radius: 15px;
   background-color: #f6f6f6;
   cursor: pointer;
+  border: 1px solid transparent;
+  transition: border 0.13s ease;
 
   @include laptop {
     padding: 20px;
+
+    &:hover:not(.active) {
+      border: 1px solid #3a767b62;
+      transition: border 0.13s ease;
+    }
   }
 
   &.active {
@@ -106,7 +113,6 @@
 
   @include laptop {
     margin-top: 20px;
-    
   }
 }
 

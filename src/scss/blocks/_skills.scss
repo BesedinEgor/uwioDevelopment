@@ -2,6 +2,8 @@
   padding-bottom: 38px;
 
   @include laptop {
+    padding-top: 30px;
+
     .container {
       display: flex;
       align-items: flex-end;

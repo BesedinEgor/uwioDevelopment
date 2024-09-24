@@ -7,6 +7,10 @@
   color: var(--white-color);
   overflow: hidden;
 
+  @include laptop {
+    padding-top: 37px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -53,6 +57,7 @@
   @include laptop {
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
+    align-items: start;
   }
 }
 
@@ -129,6 +134,7 @@
   background-position: left top;
 
   @include laptop {
+    width: 275px;
     order: 2;
   }
 
@@ -156,6 +162,10 @@
   @include largeTablet {
     width: 100%;
     justify-content: center;
+  }
+
+  @include laptop {
+    width: 281px;
   }
 
   a {

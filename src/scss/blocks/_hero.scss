@@ -3,6 +3,10 @@
   padding-bottom: 43px;
   background-color: var(--green-color);
 
+  @include laptop {
+    padding-bottom: 0;
+  }
+
   .container {
     display: flex;
     align-items: flex-start;

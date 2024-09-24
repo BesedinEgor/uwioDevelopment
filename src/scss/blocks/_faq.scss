@@ -114,4 +114,12 @@
   padding: 13px 17px;
   color: var(--orange-color);
   background-color: var(--white-color);
+  transition: background-color .2s ease-in-out;
+
+  @include laptop {
+    &:hover {
+      background-color: #ffffff;
+      transition: background-color .2s ease-in-out;
+    }
+  }
 }
