@@ -10,11 +10,14 @@
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
 
+import headerFixed from './modules/header-fixed.js';
+headerFixed();
+
 import initSwiper from "./modules/swiper.js";
 initSwiper();
 
 import programAccordion from './modules/program-accordion.js';
 programAccordion();
 
-import accordion from './modules/accordion.js';
-accordion();
+// import accordion from './modules/accordion.js';
+// accordion();
