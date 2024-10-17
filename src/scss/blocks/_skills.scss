@@ -22,10 +22,42 @@
 }
 
 .skills__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding-bottom: 12px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    top: 20px;
+    left: 12.5px;
+    background-color: var(--green-color);
+
+    @media (min-width:343px) {
+      height: 81%;
+    }
+
+    @media (min-width:356px) {
+      height: 80%;
+    }
+
+    @media (min-width:386px) {
+      height: 78%;
+    }
+
+    @media (min-width:452px) {
+      top: 10px;
+      height: 82%;
+    }
+
+    @include tablet {
+      content: none;
+    }
+  }
 
   @include laptop {
     gap: 27px;
@@ -53,8 +85,8 @@
     left: 0px;
     top: 50%;
     transform: translateY(-50%);
-    width: 26px;
-    height: 26px;
+    width: 27px;
+    height: 27px;
 
     background-image: url("./../../img/svg/circle.svg");
     background-repeat: no-repeat;

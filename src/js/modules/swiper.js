@@ -13,7 +13,15 @@ function initSwiper() {
     spaceBetween: 16,
     pagination: {
       el: ".swiper-pagination",
-      dynamicBullets: true
+      dynamicBullets: true,
+    },
+    breakpoints: {
+      1185: {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      },
     },
   });
 

@@ -18,6 +18,16 @@
   .swiper-slide {
     padding: 12px 0;
 
+    @include laptop {
+      padding: 0 60px;
+      margin: 40px 0px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
     .swiper-slide-inner {
       margin-bottom: 15px;
 
@@ -26,6 +36,10 @@
       justify-content: center;
       gap: 20px;
       flex-direction: column;
+
+      @include laptop {
+        width: 50%;
+      }
     }
 
     .swiper-slide-title {
@@ -41,11 +55,14 @@
 
     img {
       margin: 0 auto;
-    }
 
+      @include laptop {
+        width: 482px;
+      }
+    }
   }
-  
-  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
+
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
     padding: 2px 0;
 
     bottom: 0;
@@ -58,6 +75,27 @@
     .swiper-pagination-bullet-active {
       background-color: var(--green-color);
       transform: scale(1.1);
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  @include laptop {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: flex;
+      width: 16px;
+      height: 29px;
+
+      &::after {
+        font-size: 30px;
+        width: 16px;
+        height: 29px;
+        color: var(--green-color);
+      }
     }
   }
 }

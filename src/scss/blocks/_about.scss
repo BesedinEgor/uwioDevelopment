@@ -10,18 +10,28 @@
 
 .about__title {
   margin-bottom: 28px;
+
+  @include laptop {
+    margin-bottom: 40px;
+  }
 }
 
 .about__people {
   margin: 0 auto;
   margin-bottom: 20px;
 
+  @include largeTablet {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
   @include laptop {
-    margin-bottom: 120px;
+    width: 693px;
   }
 }
 
 .about__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 33px;
@@ -29,6 +39,20 @@
   @include laptop {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 20px;
+      transform: translateX(-50%);
+      width: 80%;
+      height: 1px;
+      background-color:var(--green-color);
+      z-index: 0;
+      
+    }
+    
   }
 }
 
@@ -48,6 +72,7 @@
     background-image: url("./../../img/svg/check.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
   }
 
   @include laptop {
