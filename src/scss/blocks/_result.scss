@@ -18,15 +18,15 @@
   .swiper-slide {
     padding: 12px 0;
 
-    // @include laptop {
-    //   padding: 0 60px;
-    //   margin: 40px 0px;
+    @include laptop {
+      padding: 0 60px;
+      margin: 40px 0px;
 
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: space-between;
-    //   gap: 50px;
-    // }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
 
     .swiper-slide-inner {
       margin-bottom: 15px;
@@ -37,9 +37,9 @@
       gap: 20px;
       flex-direction: column;
 
-      // @include laptop {
-      //   width: 50%;
-      // }
+      @include laptop {
+        width: 50%;
+      }
     }
 
     .swiper-slide-title {
@@ -79,24 +79,24 @@
     }
   }
 
-  // .swiper-button-prev,
-  // .swiper-button-next {
-  //   display: none;
-  // }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
 
-  // @include laptop {
-  //   .swiper-button-prev,
-  //   .swiper-button-next {
-  //     display: flex;
-  //     width: 16px;
-  //     height: 29px;
+  @include laptop {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: flex;
+      width: 16px;
+      height: 29px;
 
-  //     &::after {
-  //       font-size: 30px;
-  //       width: 16px;
-  //       height: 29px;
-  //       color: var(--green-color);
-  //     }
-  //   }
-  // }
+      &::after {
+        font-size: 30px;
+        width: 16px;
+        height: 29px;
+        color: var(--green-color);
+      }
+    }
+  }
 }

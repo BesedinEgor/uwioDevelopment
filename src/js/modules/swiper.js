@@ -15,14 +15,14 @@ function initSwiper() {
       el: ".swiper-pagination",
       dynamicBullets: true,
     },
-    // breakpoints: {
-    //   1185: {
-    //     navigation: {
-    //       nextEl: ".swiper-button-next",
-    //       prevEl: ".swiper-button-prev",
-    //     },
-    //   },
-    // },
+    breakpoints: {
+      1185: {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      },
+    },
   });
 
   // Инициализация programSwiper
