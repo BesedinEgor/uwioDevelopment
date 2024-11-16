@@ -1,6 +1,7 @@
 .program {
   position: relative;
   margin-top: 30px;
+  margin-bottom: 30px;
 
   @include largeTablet {
     margin-bottom: 30px;
@@ -8,6 +9,7 @@
 
   @include largeTablet {
     margin-top: 100px;
+    margin-bottom: 100px;
   }
 }
 

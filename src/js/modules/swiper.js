@@ -7,23 +7,23 @@ const slider = document.querySelector(".program-swiper");
 const slides = slider.querySelectorAll(".swiper-slide");
 
 function initSwiper() {
-  const resultSwiper = new Swiper(".result-swiper", {
-    slidesPerView: "auto",
-    loop: false,
-    spaceBetween: 16,
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-    breakpoints: {
-      1185: {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      },
-    },
-  });
+  // const resultSwiper = new Swiper(".result-swiper", {
+  //   slidesPerView: "auto",
+  //   loop: false,
+  //   spaceBetween: 16,
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     dynamicBullets: true,
+  //   },
+  //   breakpoints: {
+  //     1185: {
+  //       navigation: {
+  //         nextEl: ".swiper-button-next",
+  //         prevEl: ".swiper-button-prev",
+  //       },
+  //     },
+  //   },
+  // });
 
   // Инициализация programSwiper
   const programSwiper = new Swiper(".program-swiper", {

@@ -1,151 +1,151 @@
-.different {
-  padding-top: 10px;
-  padding-bottom: 27px;
+// .different {
+//   padding-top: 10px;
+//   padding-bottom: 27px;
   
-  @include laptop {
-    padding-top: 40px;
-    padding-bottom: 50px;
-  }
-}
+//   @include laptop {
+//     padding-top: 40px;
+//     padding-bottom: 50px;
+//   }
+// }
 
-.different__title {
-  margin-bottom: 15px;
+// .different__title {
+//   margin-bottom: 15px;
 
-  @include laptop {
-    margin-bottom: 53px;
-  }
+//   @include laptop {
+//     margin-bottom: 53px;
+//   }
 
-  span {
-    color: var(--orange-color);
-  }
-}
+//   span {
+//     color: var(--orange-color);
+//   }
+// }
 
-.different__list {
-  display: grid;
-  gap: 15px;
+// .different__list {
+//   display: grid;
+//   gap: 15px;
 
-  @include laptop {
-    grid-template-columns: repeat(2, 1fr);
+//   @include laptop {
+//     grid-template-columns: repeat(2, 1fr);
 
-    column-gap: 42px;
-    row-gap: 32px;
-  }
-}
+//     column-gap: 42px;
+//     row-gap: 32px;
+//   }
+// }
 
-.different__item {
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #f6f6f6;
-  border-radius: 25px;
-  padding: 12px 10px;
-  gap: 16px;
+// .different__item {
+//   max-width: 100%;
+//   display: flex;
+//   align-items: center;
+//   background-color: #f6f6f6;
+//   border-radius: 25px;
+//   padding: 12px 10px;
+//   gap: 16px;
 
-  &:nth-child(2) {
-    .different__number {
-      &::after {
-        background-image: url("./../../img/svg/differ2.svg");
+//   &:nth-child(2) {
+//     .different__number {
+//       &::after {
+//         background-image: url("./../../img/svg/differ2.svg");
 
-        @include laptop {
-          background-image: url("./../../img/svg/differ2-desk.svg");
-        }
-      }
-    }
-  }
-  &:nth-child(3) {
-    .different__number {
-      &::after {
-        background-image: url("./../../img/svg/differ3.svg");
+//         @include laptop {
+//           background-image: url("./../../img/svg/differ2-desk.svg");
+//         }
+//       }
+//     }
+//   }
+//   &:nth-child(3) {
+//     .different__number {
+//       &::after {
+//         background-image: url("./../../img/svg/differ3.svg");
 
-        @include laptop {
-          background-image: url("./../../img/svg/differ3-desk.svg");
-        }
-      }
-    }
-  }
-  &:last-child {
-    .different__number {
-      &::after {
-        background-image: url("./../../img/svg/differ4.svg");
+//         @include laptop {
+//           background-image: url("./../../img/svg/differ3-desk.svg");
+//         }
+//       }
+//     }
+//   }
+//   &:last-child {
+//     .different__number {
+//       &::after {
+//         background-image: url("./../../img/svg/differ4.svg");
 
-        @include laptop {
-          background-image: url("./../../img/svg/differ4-desk.svg");
-        }
-      }
-    }
-  }
+//         @include laptop {
+//           background-image: url("./../../img/svg/differ4-desk.svg");
+//         }
+//       }
+//     }
+//   }
 
-  @include laptop {
-    gap: 33px;
-    padding: 16px 18px;
-  }
-}
+//   @include laptop {
+//     gap: 33px;
+//     padding: 16px 18px;
+//   }
+// }
 
-.different__number {
-  position: relative;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 32px;
-  color: #ffffff;
-  background-color: var(--green-color);
-  border-radius: 25px;
-  padding-right: 20px;
-  padding-left: 48px;
-  height: 40px;
+// .different__number {
+//   position: relative;
+//   display: inline-block;
+//   font-weight: 700;
+//   font-size: 32px;
+//   color: #ffffff;
+//   background-color: var(--green-color);
+//   border-radius: 25px;
+//   padding-right: 20px;
+//   padding-left: 48px;
+//   height: 40px;
 
-  &::after {
-    content: "";
+//   &::after {
+//     content: "";
 
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
+//     position: absolute;
+//     left: 0px;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     width: 40px;
+//     height: 40px;
 
-    background-image: url("./../../img/svg/differ1.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+//     background-image: url("./../../img/svg/differ1.svg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
 
-    @include laptop {
-      width: 74px;
-      height: 73px;
-      background-image: url("./../../img/svg/differ1-desk.svg");
-    }
-  }
+//     @include laptop {
+//       width: 74px;
+//       height: 73px;
+//       background-image: url("./../../img/svg/differ1-desk.svg");
+//     }
+//   }
 
-  @include laptop {
-    font-size: 60px;
-    height: 72px;
-    padding-left: 98px;
-  }
-}
+//   @include laptop {
+//     font-size: 60px;
+//     height: 72px;
+//     padding-left: 98px;
+//   }
+// }
 
-.different__item-title {
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--black-color);
-  margin-bottom: 12px;
+// .different__item-title {
+//   font-weight: 700;
+//   font-size: 18px;
+//   color: var(--black-color);
+//   margin-bottom: 12px;
 
-  @include laptop {
-    font-size: 26px;
-    font-weight: 500;
-    margin-bottom: 17px;
-  }
-}
+//   @include laptop {
+//     font-size: 26px;
+//     font-weight: 500;
+//     margin-bottom: 17px;
+//   }
+// }
 
-.different__content {
-  display: flex;
-  flex-direction: column;
-}
+// .different__content {
+//   display: flex;
+//   flex-direction: column;
+// }
 
-.different__text {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--gray-color);
+// .different__text {
+//   font-weight: 400;
+//   font-size: 14px;
+//   color: var(--gray-color);
 
-  @include laptop {
-    font-size: 18px;
-    font-weight: 500;
-  }
-}
+//   @include laptop {
+//     font-size: 18px;
+//     font-weight: 500;
+//   }
+// }
