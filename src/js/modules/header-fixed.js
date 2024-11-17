@@ -8,7 +8,7 @@ function headerFixed() {
   window.addEventListener("scroll", () => {
     let scrollDistance = window.scrollY;
 
-    if (scrollDistance >= advantagesHeight - 300) {
+    if (scrollDistance >= advantagesHeight - 150) {
       header.classList.add("header__fixed--active");
     } else {
       header.classList.remove("header__fixed--active");

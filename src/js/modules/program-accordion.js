@@ -4,18 +4,18 @@ function programAccordion() {
     const tabCards = document.querySelectorAll(".program__image-phone");
 
     // Открываем первый пункт по умолчанию
-    if (accordions.length > 0) {
-      toggleAccordion(accordions[0]);
-    }
+    // if (accordions.length > 0) {
+    //   toggleAccordion(accordions[0]);
+    // }
 
     accordions.forEach(el => {
       el.addEventListener('click', (element) => {
         const isOpen = el.classList.contains('open');
-        closeAllAccordions(accordions);
+        // closeAllAccordions(accordions);
         openContent(element);
-        if (!isOpen) {
-          toggleAccordion(el);
-        }
+        // if (!isOpen) {
+        //   toggleAccordion(el);
+        // }
       });
     });
 
@@ -36,23 +36,23 @@ function programAccordion() {
       document.querySelector(`#${accordion}`).classList.add("active");
     }
 
-    function toggleAccordion(item) {
-      const control = item.querySelector('.program__accordion-control');
-      const content = item.querySelector('.program__accordion-content');
+    // function toggleAccordion(item) {
+    //   const control = item.querySelector('.program__accordion-control');
+    //   const content = item.querySelector('.program__accordion-content');
 
-      item.classList.toggle('open');
-      control.setAttribute('aria-hidden', item.classList.contains('open'));
-      content.setAttribute('aria-hidden', !item.classList.contains('open'));
-      content.style.maxHeight = item.classList.contains('open') ? content.scrollHeight + 'px' : null;
-    }
+    //   item.classList.toggle('open');
+    //   control.setAttribute('aria-hidden', item.classList.contains('open'));
+    //   content.setAttribute('aria-hidden', !item.classList.contains('open'));
+    //   content.style.maxHeight = item.classList.contains('open') ? content.scrollHeight + 'px' : null;
+    // }
 
-    function closeAllAccordions(items) {
-      items.forEach(item => {
-        if (item.classList.contains('open')) {
-          toggleAccordion(item);
-        }
-      });
-    }
+    // function closeAllAccordions(items) {
+    //   items.forEach(item => {
+    //     if (item.classList.contains('open')) {
+    //       toggleAccordion(item);
+    //     }
+    //   });
+    // }
   });
 }
 

@@ -13,6 +13,9 @@
 import headerFixed from './modules/header-fixed.js';
 headerFixed();
 
+import videoSlider from './modules/hero-video-slides.js';
+videoSlider();
+
 import initSwiper from "./modules/swiper.js";
 initSwiper();
 

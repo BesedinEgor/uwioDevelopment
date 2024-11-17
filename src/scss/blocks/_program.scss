@@ -28,14 +28,18 @@
 
 .program__title {
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .program__image-phone {
   display: none;
 
   &.active {
+    width: 200px;
+
     @include largeTablet {
       display: block;
+      width: 100%;
     }
   }
 }
@@ -141,19 +145,19 @@
   .slide-inner {
     position: relative;
     padding-top: 340px;
-    padding-bottom: 75px;
+    padding-bottom: 35px;
 
     border-radius: 15px;
     background-color: var(--white-color);
-    height: 600px;
+    height: 460px;
 
-    @media (max-width: 360px) {
-      height: 620px;
-    }
+    // @media (max-width: 360px) {
+    //   height: 620px;
+    // }
 
-    @media (max-width: 343px) {
-      height: 650px;
-    }
+    // @media (max-width: 343px) {
+    //   height: 650px;
+    // }
   }
 
   .phone {
@@ -169,16 +173,17 @@
 
     font-weight: 700;
     font-size: 18px;
+    text-align: center;
     color: var(--black-color);
   }
 
-  .slide-inner__text {
-    padding: 8px 20px 15px 20px;
+  // .slide-inner__text {
+  //   padding: 8px 20px 15px 20px;
 
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--gray-color);
-  }
+  //   font-weight: 500;
+  //   font-size: 14px;
+  //   color: var(--gray-color);
+  // }
 
   .arrow-inner {
     position: absolute;
@@ -252,6 +257,28 @@
     @include minMobile {
       width: 43%;
       bottom: 25px;
+    }
+  }
+}
+
+.program__btn {
+  padding-top: 20px;
+
+  .header__start-tg {
+    max-width: 100%;
+    font-size: 18px;
+    width: 100%;
+    padding: 15px 5px;
+
+    @include laptop {
+      font-size: 24px;
+
+      &::after {
+        width: 34px;
+        height: 34px;
+        top: -6px;
+        right: -6px;
+      }
     }
   }
 }

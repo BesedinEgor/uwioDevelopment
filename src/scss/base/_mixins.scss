@@ -16,6 +16,12 @@
     }
 }
 
+@mixin mediaTablet () {
+    @media (max-width: 1023px) {
+        @content;
+    }
+}
+
 @mixin minLaptop () {
     @media (min-width: 950px) {
         @content;
@@ -31,6 +37,18 @@
     @media (min-width: 599px) {
         @content;
     }
+}
+
+@mixin mediaMobileL () {
+	@media (max-width: 575px) {
+		@content;
+	}
+}
+
+@mixin mediaMobileXS () {
+	@media (max-width: 374px) {
+		@content;
+	}
 }
 
 @mixin minMobile () {
