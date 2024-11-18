@@ -24,11 +24,17 @@
   @include laptop {
     gap: 50px;
   }
+
+  p {
+    margin-bottom: 20px;
+  }
 }
 
 .program__title {
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-wrap: pretty;
 
   @include laptop {
     font-size: 32px;
