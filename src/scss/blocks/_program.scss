@@ -337,9 +337,10 @@
 
 .efficiency__metods-title {
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px;
   font-weight: 700;
+  text-wrap: pretty;
   line-height: normal;
   color: var(--black-color);
 
@@ -365,7 +366,7 @@
 
 .efficiency__metods-elem {
   position: relative;
-  font-size: 18px;
+  font-size: 17px;
   padding-left: 40px;
   text-decoration: dotted;
   color: var(--black-color);

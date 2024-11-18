@@ -7,7 +7,7 @@ function videoSlider () {
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add("active-text");
     }
-    setInterval(showSlide, 4000);
+    setInterval(showSlide, 4500);
 }
 
 export default videoSlider;
