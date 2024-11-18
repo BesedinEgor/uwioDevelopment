@@ -46,11 +46,13 @@
 
 .hero__title {
   position: relative;
+  padding-left: 10px;
   font-size: 23px;
   color: var(--white-color);
   text-wrap: pretty;
 
   @include minLaptop {
+    padding-left: 0;
     font-size: 35px;
   }
 
