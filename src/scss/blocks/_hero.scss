@@ -47,14 +47,15 @@
 .hero__title {
   position: relative;
   font-size: 23px;
-  padding-right: 15px;
   color: var(--white-color);
+  text-wrap: pretty;
 
   @include minLaptop {
     font-size: 35px;
   }
 
   @include laptop {
+    padding-right: 15px;
     font-size: 55px;
   }
 }
@@ -130,13 +131,13 @@
   }
 
   span:first-child {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: normal;
     color: #b9d6d8;
 
     @include mediaTablet {
-      font-size: 22px;
+      font-size: 20px;
     }
 
     @include mediaMobileXS {
@@ -152,7 +153,7 @@
 .active-text {
   display: block;
   text-wrap: balance;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 800;
   line-height: normal;
   color: var(--white-color);
