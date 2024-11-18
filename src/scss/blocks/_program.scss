@@ -29,6 +29,10 @@
 .program__title {
   margin-bottom: 20px;
   font-size: 20px;
+
+  @include laptop {
+    font-size: 32px;
+  }
 }
 
 .program__image-phone {

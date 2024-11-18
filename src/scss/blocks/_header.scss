@@ -58,8 +58,12 @@
   .header__start-tg {
     max-width: 100%;
     width: 100%;
-    font-size: 17px;
+    font-size: 18px;
     z-index: 999;
+  }
+
+  @include tablet {
+    display: none;
   }
 }
 
@@ -105,7 +109,7 @@
   background-color: var(--orange-color);
   max-width: 130px;
   border-radius: 15px;
-  padding: 7px;
+  padding: 15px;
   margin-left: auto;
 
   &::after {
