@@ -31,6 +31,10 @@
   .header__start-tg {
     font-size: 12px;
     padding: 7px 10px;
+
+    @include largeTablet {
+      padding: 15px;
+    }
   }
 }
 
