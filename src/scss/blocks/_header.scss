@@ -27,7 +27,7 @@
   }
 }
 
-.header__row{
+.header__row {
   .header__start-tg {
     font-size: 12px;
     padding: 7px 10px;
@@ -69,8 +69,12 @@
   .header__start-tg {
     max-width: 100%;
     width: 100%;
-    font-size: 18px;
+    font-size: 14px;
     z-index: 999;
+
+    @include minMobileXSS {
+      font-size: 18px;
+    }
   }
 
   @include tablet {

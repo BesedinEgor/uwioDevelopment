@@ -51,6 +51,12 @@
 	}
 }
 
+@mixin minMobileXSS () {
+	@media (min-width: 368px) {
+		@content;
+	}
+}
+
 @mixin minMobile () {
     @media (min-width: 315px) and (max-width: 370px) {
         @content;
