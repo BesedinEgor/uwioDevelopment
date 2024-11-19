@@ -35,6 +35,10 @@
     @include largeTablet {
       padding: 15px;
     }
+
+    @include laptop {
+      font-size: 15px;
+    }
   }
 }
 

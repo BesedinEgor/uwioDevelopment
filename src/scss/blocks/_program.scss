@@ -27,6 +27,10 @@
 
   p {
     margin-bottom: 20px;
+
+    @include laptop {
+      font-size: 27px;
+    }
   }
 }
 
@@ -37,7 +41,7 @@
   text-wrap: pretty;
 
   @include laptop {
-    font-size: 32px;
+    font-size: 22px;
   }
 }
 
@@ -304,6 +308,10 @@
   transform: rotate(0deg);
   cursor: pointer;
 
+  @include laptop {
+    padding: 20px 50px 20px 20px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -318,12 +326,17 @@
     transition: transform 0.3s ease-out;
     background-repeat: no-repeat;
 
+    
     @include largeTablet {
       top: 10px;
     }
-
+    
     @include mediaMobileXS {
       top: 25px;
+    }
+
+    @include laptop {
+      top: 20px;
     }
   }
 }
@@ -347,6 +360,10 @@
   @include largeTablet {
     font-size: 16px;
     padding: 0;
+  }
+
+  @include laptop {
+    font-size: 20px;
   }
 }
 
