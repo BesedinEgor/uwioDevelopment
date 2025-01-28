@@ -37,13 +37,14 @@ h3 {
 }
 
 .link-button {
-	padding: 15px;
+	padding: 15px 10px;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
 	border-radius: 15px;
+	font-weight: 800;
 	background-color: var(--orange-color);
 	color: #ffffff;
 
