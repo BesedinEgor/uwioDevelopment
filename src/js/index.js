@@ -13,6 +13,9 @@ mobileNav();
 import headerFixed from './modules/header-fixed.js';
 headerFixed();
 
+import "./modules/videofragment.js";
+import "./modules/problems-modal.js";
+
 import initSwiper from "./modules/swiper.js";
 initSwiper();
 

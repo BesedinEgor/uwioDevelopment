@@ -126,7 +126,10 @@
 
 //swiper mobile
 .program-swiper {
+  margin-bottom: 20px;
+
   @include largeTablet {
+    margin-bottom: 0;
     &.none {
       display: none;
     }
@@ -143,14 +146,14 @@
 
     border-radius: 15px;
     background-color: var(--white-color);
-    height: 600px;
+    height: 550px;
 
     @media (max-width: 360px) {
-      height: 620px;
+      height: 570px;
     }
 
     @media (max-width: 343px) {
-      height: 650px;
+      height: 600px;
     }
   }
 

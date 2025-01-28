@@ -1,0 +1,335 @@
+.videofragment__video {
+  padding-top: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (max-width: 767px) {
+    width: 500px;
+    align-items: normal;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+}
+
+// position: absolute;
+// display: flex;
+// flex-direction: column;
+// align-items: flex-end;
+
+// @include mediaMobile {
+//   width: 500px;
+//   align-items:normal
+// }
+
+// @include mediaMobileL {
+//   width: 100%;
+//   top: 445px;
+// }
+
+// @include mediaMobileXS {
+//     top: 370px;
+// }
+
+.video {
+  video {
+    // исправление бага показа контрол-элементов на iOS
+    &::-webkit-media-controls-panel {
+      display: none !important;
+      -webkit-appearance: none;
+    }
+
+    &::-webkit-media-controls-play-button {
+      display: none !important;
+      -webkit-appearance: none;
+    }
+
+    &::-webkit-media-controls-start-playback-button {
+      display: none !important;
+      -webkit-appearance: none;
+    }
+    // /исправление бага показа контрол-элементов на iOS
+    position: relative;
+    object-fit: cover;
+    border-radius: 25px;
+    max-width: 498px;
+    height: 580px;
+
+    @media (max-width: 1023px) {
+      width: 350px;
+      height: 456px;
+    }
+
+    @media (max-width: 575px) {
+      width: 100%;
+    }
+
+    @media (max-width: 767px) {
+      display: flex;
+      margin: auto;
+      width: 100%;
+      height: 250px;
+    }
+
+    @media (max-width: 374px) {
+      width: 100%;
+      height: 230px;
+    }
+     //  /фильтр для видео
+
+    position: relative;
+    object-fit: cover;
+    border-radius: 25px;
+    max-width: 500px;
+    height: 580px;
+
+    @media (max-width: 1023px) {
+      width: 350px;
+      height: 456px;
+    }
+
+    @media (max-width: 575px) {
+      width: 100%;
+    }
+
+    @media (max-width: 767px) {
+      display: flex;
+      margin: auto;
+      width: 100%;
+      height: 230px;
+    }
+
+    @media (max-width: 374px) {
+      width: 100%;
+      // height: 210px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 580px;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, .4);
+    z-index: 1;
+
+    @media (max-width: 1023px) {
+      width: 350px;
+      height: 456px;
+    }
+
+    @media (max-width: 767px) {
+      width: 500px;
+      height: 230px;
+    }
+    @media (max-width: 575px) {
+      width: 100%;
+    }
+
+    @media (max-width: 374px) {
+      width: 100%;
+      // height: 210px;
+    }
+  }
+
+  .videofragment__image-desc {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow: hidden;
+    z-index: 3;
+
+    span:first-child {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: normal;
+      color: #b9d6d8;
+
+      @media (max-width: 1023px) {
+        font-size: 22px;
+      }
+
+      @media (max-width: 374px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .slide {
+    display: none;
+  }
+
+  .active {
+    display: block;
+    max-width: 460px;
+    text-wrap: balance;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: normal;
+    color: var(--white-color);
+    transition: opacity 1s ease-in-out;
+
+    //   @include mediaTablet {
+    //     font-size: 24px;
+    //   }
+
+    //   @include mediaMobileXS {
+    //     font-size: 21px;
+    //     font-weight: 900;
+    //   }
+  }
+
+  //  фильтр для видео
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 500px;
+  //   height: 580px;
+  //   border-radius: 25px;
+  //   background: rgba(0, 0, 0, .2);
+  //   z-index: 1;
+
+  //   @include mediaTablet {
+  //     width: 350px;
+  //     height: 456px;
+  //   }
+
+  //   @include mediaMobile {
+  //     width: 500px;
+  //     height: 250px;
+  //   }
+  //   @include mediaMobileL {
+  //     width: 100%;
+  //   }
+
+  //   @include mediaMobileXS {
+  //     width: 100%;
+  //     height: 230px;
+  //   }
+  // }
+
+  //  /фильтр для видео
+
+  //   position: relative;
+  //   object-fit: cover;
+  //   border-radius: 25px;
+  //   max-width: 500px;
+  //   height: 580px;
+
+  //   @include mediaTablet {
+  //     width: 350px;
+  //     height: 456px;
+  //   }
+
+  //   @include mediaMobileL {
+  //     width: 100%;
+  //   }
+
+  //   @include mediaMobile {
+  //     display: flex;
+  //     margin: auto;
+  //     width: 100%;
+  //     height: 230px;
+  //   }
+
+  //   @include mediaMobileXS {
+  //     width: 100%;
+  //     // height: 210px;
+  //   }
+  // }
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 500px;
+  //   height: 580px;
+  //   border-radius: 25px;
+  //   background: rgba(0, 0, 0, .4);
+  //   z-index: 1;
+
+  //   @include mediaTablet {
+  //     width: 350px;
+  //     height: 456px;
+  //   }
+
+  //   @include mediaMobile {
+  //     width: 500px;
+  //     height: 230px;
+  //   }
+  //   @include mediaMobileL {
+  //     width: 100%;
+  //   }
+
+  //   @include mediaMobileXS {
+  //     width: 100%;
+  //     // height: 210px;
+  //   }
+}
+
+.videofragment__image-desc {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow: hidden;
+  z-index: 3;
+
+  span:first-child {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    color: #b9d6d8;
+
+    @media (max-width: 1023px) {
+      font-size: 22px;
+    }
+
+    @media (max-width: 374px) {
+      font-size: 16px;
+    }
+  }
+  .slide {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+    max-width: 460px;
+    text-wrap: balance;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: normal;
+    color: var(--white-color);
+    transition: opacity 1s ease-in-out;
+  
+    @media (max-width: 1023px) {
+      font-size: 24px;
+    }
+  
+    @media (max-width: 374px) {
+      font-size: 21px;
+      font-weight: 900;
+    }
+  }
+}
+

@@ -75,6 +75,38 @@
   }
 }
 
+.hero__price {
+  padding-right: 8px;
+  margin-top: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 77%;
+  text-transform: uppercase;
+  background-color: var(--black-color);
+  border-radius: 7px;
+  column-gap: 6px;
+  color: var(--white-color);
+
+  @include largeTablet {
+    display: none;
+  }
+}
+
+.hero__price-sticker {
+  padding: 8px;
+  background-color: var(--orange-color);
+  border-radius: 7px;
+}
+
+.hero__price-info {
+  font-weight: 500;
+  font-size: 11px;
+}
+
 .hero__image-mob {
   @include largeTablet {
     grid-row: span 2 / span 2;

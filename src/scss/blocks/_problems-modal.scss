@@ -1,0 +1,93 @@
+.problems-modal {
+    display: none;
+  }
+  
+  // фоновый фильтр модалки
+  
+  // .methodology-modal__background {
+  //   position: fixed;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   z-index: 99;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: rgba(231, 243, 244, 0.5);
+  //   backdrop-filter: blur(3px);
+  // }
+  
+  // END
+  
+  .problems-modal__card {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    // top: 50%;
+    z-index: 999;
+    // transform: translateY(-50%);
+    // box-shadow: 0 0 15px -7px #000000;
+    background-color: #ffffff;
+    animation: transform .3s;
+  }
+  
+  .problems-modal__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 17px;
+    min-height: 60px;
+    gap: 30px;
+    background-color: var(--white-color);
+  
+    button {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/svg/arrow-modal.svg");
+      background-repeat: no-repeat;
+      left: 17px;
+    }
+  }
+  
+  .problems-modal__text {
+    max-width: 200px;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--black-color);
+  }
+  
+  .problems-modal__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 20px 20px 30px 20px;
+  
+    .link-button {
+      padding: 13px 10px;
+      max-width: 100%;
+      margin-top: auto;
+      font-size: 15px;
+      font-weight: 800;
+    }
+  }
+  
+  
+  @keyframes transform {
+    0% {
+      transform: translateX(150%);
+    }
+  
+    100% {
+      transform: translateX(0%);
+    }
+  }

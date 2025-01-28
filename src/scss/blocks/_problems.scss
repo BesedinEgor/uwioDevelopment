@@ -46,9 +46,11 @@
   flex-direction: column;
   gap: 12px;
   padding-left: 60px;
+  margin-bottom: 30px;
 
   @include laptop {
     gap: 16px;
+    margin-bottom: 0;
   }
 
   &::after {
@@ -87,4 +89,19 @@
   @include laptop {
     font-size: 26px;
   }
+}
+
+.problems__button {
+  padding: 15px 22px;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-weight: 900;
+  font-size: 17px;
+
+  background-color: var(--black-color);
+  color: var(--white-color);
 }

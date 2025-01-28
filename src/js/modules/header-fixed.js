@@ -8,11 +8,15 @@ function headerFixed() {
   window.addEventListener("scroll", () => {
     let scrollDistance = window.scrollY;
 
-    if (scrollDistance >= advantagesHeight - 600) {
+    if (scrollDistance >= advantagesHeight - 1200) {
       header.classList.add("header__fixed--active");
     } else {
       header.classList.remove("header__fixed--active");
     }
+    if (scrollDistance >= advantagesHeight - 200) {
+      header.classList.remove("header__fixed--active");
+    }
+
   });
 }
 

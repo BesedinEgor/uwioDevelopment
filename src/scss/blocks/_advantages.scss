@@ -113,11 +113,6 @@
       background-image: url("./../../img/svg/icon5.svg");
     }
   }
-  &:last-child {
-    &::after {
-      background-image: url("./../../img/svg/icon6.svg");
-    }
-  }
 }
 
 .advantages__item-title {
@@ -128,6 +123,12 @@
   @include desktop {
     font-size: 26px;
     margin-bottom: 10px;
+  }
+
+  sup {
+    font-weight: 700;
+    font-size: 11px;
+    color: var(--orange-color);
   }
 }
 
@@ -144,4 +145,12 @@
     font-size: 16px;
     line-height: 140%;
   }
+}
+.advantages__descr-more {
+  margin-top: 5px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 117%;
+  color: var(--orange-color);
 }

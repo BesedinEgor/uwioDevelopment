@@ -30,6 +30,26 @@ h3 {
 		font-size: 38px;
 	}
 
+	span {
+		color: var(--orange-color);
+	}
+
+}
+
+.link-button {
+	padding: 15px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	border-radius: 15px;
+	background-color: var(--orange-color);
+	color: #ffffff;
+
+	@include minMobile {
+		font-size: 13px;
+	}
 }
 
 code {
