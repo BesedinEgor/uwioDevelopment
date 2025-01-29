@@ -7,8 +7,8 @@
 // });
 
 // Мобильная навигация
-import mobileNav from './modules/mobile-nav.js';
-mobileNav();
+// import mobileNav from './modules/mobile-nav.js';
+// mobileNav();
 
 import headerFixed from './modules/header-fixed.js';
 headerFixed();

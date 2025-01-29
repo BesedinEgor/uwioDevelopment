@@ -1,5 +1,5 @@
 .faq {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   @include laptop {
     margin-bottom: 100px;
@@ -117,25 +117,28 @@
   background-color: var(--white-color);
   transition: background-color 0.2s ease-in-out;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: -4px;
-    right: -4px;
-    background-image: url("./../../img/svg/tg-icon.svg");
-    background-position: center center; /* x y */
-    background-size: cover;
-    background-repeat: no-repeat;
+  //угловой стикер телеграмма
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 24px;
+  //   height: 24px;
+  //   top: -4px;
+  //   right: -4px;
+  //   background-image: url("./../../img/svg/tg-icon.svg");
+  //   background-position: center center; /* x y */
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
 
-    @include laptop {
-      width: 34px;
-      height: 34px;
-      top: -5px;
-      right: -5px;
-    }
-  }
+  //   @include laptop {
+  //     width: 34px;
+  //     height: 34px;
+  //     top: -5px;
+  //     right: -5px;
+  //   }
+  // }
+
+  //  /угловой стикер телеграмма
 
   @include laptop {
     &:hover {

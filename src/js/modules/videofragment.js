@@ -7,4 +7,4 @@ function showSlide() {
   currentSlide = (currentSlide + 1) % slides.length;
   slides[currentSlide].classList.add("active");
 }
-setInterval(showSlide, 4000);
+setInterval(showSlide, 5000);

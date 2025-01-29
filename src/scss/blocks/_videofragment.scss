@@ -1,5 +1,7 @@
+.videofragment {
+  margin: 40px 0;
+}
 .videofragment__video {
-  padding-top: 15px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -114,7 +116,7 @@
     width: 500px;
     height: 580px;
     border-radius: 25px;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .5);
     z-index: 1;
 
     @media (max-width: 1023px) {

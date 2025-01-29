@@ -1,6 +1,5 @@
 .problems {
-  padding-top: 24px;
-  padding-bottom: 37px;
+  margin-bottom: 40px;
 
   @include laptop {
     padding-top: 40px;
@@ -40,13 +39,13 @@
 }
 
 .problems__list {
+  padding-left: 60px;
+  margin-bottom: 20px;
   position: relative;
 
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-left: 60px;
-  margin-bottom: 30px;
 
   @include laptop {
     gap: 16px;

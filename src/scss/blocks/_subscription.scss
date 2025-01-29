@@ -31,10 +31,13 @@
   gap: 5px;
 }
 .subscription__item {
-  position: relative;
   padding: 6px 15px 6px 60px;
+  position: relative;
 
+  display: flex;
+  align-items: center;
   width: 100%;
+  min-height: 51px;
   font-weight: 400;
   font-size: 19px;
   line-height: 101%;
