@@ -21,6 +21,7 @@
   // END
   
   .problems-modal__card {
+    overflow-y: auto;
     position: fixed;
     display: flex;
     flex-direction: column;
