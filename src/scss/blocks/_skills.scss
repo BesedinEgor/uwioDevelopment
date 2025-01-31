@@ -2,14 +2,23 @@
   margin-bottom: 40px;
 
   @include laptop {
-    padding-top: 30px;
+    padding-top: 0px;
 
-    .container {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 30px;
-    }
+    // .container {
+    //   display: flex;
+    //   align-items: flex-end;
+    //   justify-content: space-between;
+    //   gap: 30px;
+    // }
+  }
+}
+
+.skills__wrapper {
+  @include laptop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
   }
 }
 
@@ -17,7 +26,7 @@
   margin-bottom: 19px;
 
   @include laptop {
-    margin-bottom: 37px;
+    margin-bottom: 45px;
   }
 }
 
@@ -60,7 +69,7 @@
   // }
 
   @include laptop {
-    gap: 27px;
+    gap: 50px;
   }
 }
 
@@ -78,12 +87,14 @@
   line-height: 140%;
   color: var(--green-color);
 
-  background-image: url('./../../img/svg/skills-arrow.svg');
+  background-image: url("./../../img/svg/skills-arrow.svg");
   background-repeat: no-repeat;
 
   @include laptop {
     font-size: 18px;
     padding-left: 54px;
+  background-image: url("./../../img/svg/skills-arrow-desk.svg");
+
   }
 
   // &::after {
@@ -116,6 +127,10 @@
   font-size: 17px;
   line-height: 94%;
   color: var(--green-color);
+
+  @include laptop {
+    font-size: 26px;
+  }
 }
 
 .skills__item-desc {
@@ -123,9 +138,26 @@
   font-size: 15px;
   line-height: 114%;
   color: var(--black-color);
+
+  @include laptop {
+    font-weight: 400;
+    font-size: 22px;
+  }
 }
 
-.skills__image {
+.skills__image-mob {
   width: 100%;
   margin-bottom: 20px;
+
+  @include laptop {
+    display: none;
+  }
+}
+
+.skills__image-desk {
+  display: none;
+
+  @include laptop {
+    display: block;
+  }
 }

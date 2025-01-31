@@ -51,6 +51,10 @@ h3 {
 	@include minMobile {
 		font-size: 13px;
 	}
+
+	@include largeTablet {
+		font-size: 21px;
+	}
 }
 
 code {

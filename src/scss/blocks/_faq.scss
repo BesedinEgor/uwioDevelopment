@@ -73,7 +73,6 @@
   max-height: 0;
   will-change: max-height;
   transition: all 0.3s ease-out;
-
 }
 
 .open .faq__accordion-content {
@@ -141,6 +140,8 @@
   //  /угловой стикер телеграмма
 
   @include laptop {
+    font-size: 21px;
+
     &:hover {
       background-color: #ffffff;
       transition: background-color 0.2s ease-in-out;

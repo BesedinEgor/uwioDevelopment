@@ -3,6 +3,10 @@
   margin-top: 60px;
   padding-bottom: 20px;
   background-color: #e8f3f5;
+
+  @include laptop {
+    padding-bottom: 30px;
+  }
 }
 .subscription__title {
   margin-bottom: 10px;
@@ -11,6 +15,11 @@
 .subscription__content {
   padding-top: 20px;
   padding-bottom: 17px;
+
+  @include laptop {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 .subscription__content-title {
   margin-bottom: 11px;
@@ -20,6 +29,11 @@
   font-size: 22px;
   text-align: center;
   color: var(--green-color);
+
+  @include laptop {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
 }
 .subscription__list {
   margin-bottom: 15px;
@@ -29,6 +43,10 @@
   align-items: flex-start;
   justify-content: center;
   gap: 5px;
+
+  @include laptop {
+    margin-bottom: 35px;
+  }
 }
 .subscription__item {
   padding: 6px 15px 6px 60px;
@@ -46,6 +64,11 @@
   border-radius: 11px;
   background-color: #fcfefe;
 
+  @include laptop {
+    font-size: 35px;
+    min-height: 74px;
+  }
+
   &:after {
     content: "";
     position: absolute;
@@ -54,8 +77,14 @@
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url("./../../img/svg/sub-check.svg");
+    background-image: url("./../../img/svg/sub-check-mob.svg");
     background-repeat: no-repeat;
+
+    @include laptop {
+      width: 30px;
+      height: 25px;
+      background-image: url("./../../img/svg/sub-check.svg");
+    }
   }
 }
 .subscription__price {
@@ -68,6 +97,12 @@
   background-color: var(--green-color);
   column-gap: 0;
 
+  @include laptop {
+    max-width: 331px;
+    min-height: 57px;
+    border-radius: 18px;
+  }
+
   .hero__price-sticker {
     font-weight: 700;
     font-size: 17px;
@@ -75,6 +110,13 @@
     color: var(--white-color);
     background-color: #4a99a0;
     border-radius: 10px;
+
+    @include laptop {
+      font-size: 31px;
+      line-height: 77%;
+      min-height: 57px;
+      border-radius: 18px;
+    }
   }
   .hero__price-info {
     padding-right: 10px;
@@ -82,5 +124,12 @@
     font-weight: 500;
     font-size: 14px;
     color: var(--white-color);
+
+    @include laptop {
+      padding-right: 25px;
+
+      font-size: 26px;
+      line-height: 90%;
+    }
   }
 }
