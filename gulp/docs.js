@@ -94,7 +94,7 @@ gulp.task('html:docs', function () {
 					},
 				})
 			)
-			.pipe(htmlclean())
+			// .pipe(htmlclean()) минификация html
 			.pipe(gulp.dest('./docs/'))
 	);
 });
@@ -121,7 +121,7 @@ gulp.task('sass:docs', function () {
 					'$1$2$3$4$6$1'
 				)
 			)
-			.pipe(csso())
+			// .pipe(csso()) минификация css
 			.pipe(sourceMaps.write())
 			.pipe(gulp.dest('./docs/css/'))
 	);
